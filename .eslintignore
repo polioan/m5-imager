@@ -1,0 +1,11 @@
+node_modules
+
+dist
+dist-ssr
+dist-electron
+
+coverage
+coverage.html
+coverage.eslint.html
+
+.eslintrc.cjs

@@ -1,0 +1,151 @@
+:root {
+  --primary-color: #ffffff;
+  --secondary-color: #161a1d;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --primary-color: #161a1d;
+    --secondary-color: #ffffff;
+  }
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+}
+
+html {
+  line-height: 1.5;
+  font-size: 16px;
+  font-family:
+    system-ui,
+    -apple-system,
+    BlinkMacSystemFont,
+    'Segoe UI',
+    Roboto,
+    Oxygen,
+    Ubuntu,
+    Cantarell,
+    'Open Sans',
+    'Helvetica Neue',
+    sans-serif;
+  text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -webkit-tap-highlight-color: #ffffff00;
+  tab-size: 4;
+}
+
+html:focus-within {
+  scroll-behavior: smooth;
+}
+
+body,
+#root {
+  width: 100vw;
+  overflow-x: hidden;
+  background-color: var(--primary-color);
+}
+
+#root {
+  margin: 1rem;
+}
+
+.licenses-container {
+  margin-top: 1rem;
+  width: calc(100% - 2rem);
+}
+
+pre,
+code {
+  font-size: 1em;
+  font: monospace;
+  color: var(--secondary-color);
+}
+
+pre {
+  overflow: auto;
+}
+
+select,
+button,
+option {
+  line-height: inherit;
+  font: inherit;
+  text-rendering: inherit;
+  text-transform: none;
+  cursor: pointer;
+}
+
+select,
+button {
+  background: var(--secondary-color);
+  color: var(--primary-color);
+  transition: opacity 0.5s;
+  border-radius: 0.2rem;
+  padding: 0.65rem;
+}
+
+button {
+  border: none;
+  appearance: button;
+  -webkit-appearance: button;
+  overflow: visible;
+}
+
+button:hover,
+select:hover {
+  opacity: 0.6;
+}
+
+button:focus,
+select:focus {
+  outline: none;
+  opacity: 0.6;
+}
+
+button:disabled,
+select:disabled {
+  cursor: default;
+  opacity: 0.1;
+}
+
+.controls-container {
+  display: flex;
+  gap: 1rem;
+}
+
+.images-container {
+  display: flex;
+  margin-top: 1rem;
+  gap: 1rem;
+  width: calc(100% - 2rem);
+  overflow-x: auto;
+}
+
+.images-container img {
+  border-radius: 0.2rem;
+}
+
+.Toastify__toast {
+  font: inherit;
+}
+
+.Toastify__toast-theme--dark {
+  background: var(--primary-color);
+  color: var(--secondary-color);
+}
+
+.Toastify__toast-theme--light {
+  background: var(--secondary-color);
+  color: var(--primary-color);
+}
